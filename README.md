@@ -5,9 +5,9 @@ https://youtu.be/8ext9G7xspg
 
 
 Proyectos realizados:
-* guess_number
-* hangman
+* guess_number: adivina un número
+* hangman: juego del ahorcado
 * madlibs
-* rock_paper_scissors
-* tic_tac_toe
-* binary_search
+* rock_paper_scissors: piedra, papel, tijera
+* tic_tac_toe: tres en raya
+* binary_search: búsqueda binaria
