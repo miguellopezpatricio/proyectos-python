@@ -11,3 +11,4 @@ Proyectos realizados:
 * rock_paper_scissors: piedra, papel, tijera
 * tic_tac_toe: tres en raya
 * binary_search: búsqueda binaria
+* minesweeper: buscaminas
