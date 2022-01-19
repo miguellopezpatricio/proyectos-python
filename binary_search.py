@@ -1,8 +1,9 @@
-
+import random
+import time
 
 def naive_search(l, target):
     for i in range(len(l)):
-        if l(i) == target:
+        if l[i] == target:
             return i
         return -1
 
@@ -31,7 +32,7 @@ def binary_search(l, target, low = None, high = None):
 
 if __name__=='__main__':
     l = [1,3,5,10,12]
-    target = 10
+    target = 3
     print(naive_search(l, target))
     print(binary_search(l, target))
 
