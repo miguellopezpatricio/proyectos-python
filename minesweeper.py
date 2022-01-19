@@ -1,7 +1,9 @@
 
 
+import enum
 import random
 import re
+from turtle import width
 
 
 class Board:
@@ -12,6 +14,8 @@ class Board:
         self.board = self.make_new_board()
         self.assign_values_to_board()
 
+        self.dug = set()
+
         
 
     def make_new_board(self):
@@ -19,6 +23,7 @@ class Board:
         board = [[None for _ in range(self.dim_size)] for _ in range (self.dim_size)]
 
         bombs_planted = 0 
+
         while bombs_planted < self.numb_bombs:
             loc = random.randint(0, self.dim_size ** 2 -1)
             row = loc // self.dim_size
@@ -82,13 +87,37 @@ class Board:
                 else:
                     visible_board[row][col] = ' '
 
-        
+        string_rep = ''
+        widths = []
+        for idx in range (self.dim_size):
+            columns = map(lambda x: x[idx], visible_board)
+            widths.append(len(max(columns, key = len)))
 
+        indices = [i for i in range(self.dim_size)]
+        indices_row = '   '
+        cells = []
+        for idx, col in enumerate(indices):
+            format = '%-' + str(widths[idx]) + "s"
+            cells.append(format % (col))
 
+        indices_row += '  '.join(cells)
+        indices_row += '  \n'
 
+        for i in range(len (visible_board)):
+            row = visible_board[i]
+            string_rep += f'{i} |'
+            cells = []
+            for idx, col in enumerate(row):
+                format = '%-' + str(widths[idx]) + 's'
 
+                cells.append(format %(col))
+            string_rep += ' |'.join(cells)
+            string_rep += ' |\n'
 
+        str_len = int(len(string_rep)/ self.dim_size)
+        string_rep = indices_row + '-'*str_len + '\n' + string_rep + '-' *str_len
 
+        return string_rep
 
 
 
