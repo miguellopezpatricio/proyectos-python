@@ -3,7 +3,7 @@
 import enum
 import random
 import re
-from turtle import width
+
 
 
 class Board:
