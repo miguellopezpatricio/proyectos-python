@@ -12,3 +12,4 @@ Proyectos realizados:
 * tic_tac_toe: tres en raya
 * binary_search: búsqueda binaria
 * minesweeper: buscaminas
+* space_invaders: primer proyecto usando PyGame
