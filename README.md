@@ -1,4 +1,4 @@
-# proyectos-python
+# proyectos_python
 
 Prácticas de python a partir de pequeños proyectos de juegos siguiendo el tutorial de FreeCodeCamp en Youtube:
 https://youtu.be/8ext9G7xspg
@@ -14,6 +14,7 @@ Proyectos realizados:
 * minesweeper: buscaminas
 
 PROYECTOS CON LA LIBRERÍA PYGAME
+
 instrucciones de instalación antes de ejecutar los juegos: pip install pygame
 * space_invaders
 * TODO: tetris!!!
