@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modulos.novo_boton &#8212; documentación de Calculiña - 1.0.0</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/zerovm.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Código de módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulos.novo_boton</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Código fuente para modulos.novo_boton</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; Módulo novo_boton</span>
+<span class="sd">    para xerar obxectos personalizados de tipo botón </span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">&quot;&quot;&quot; Módulos a importar &quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">PySide2</span> <span class="kn">import</span> <span class="n">QtCore</span><span class="p">,</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtWidgets</span>
+
+
+<div class="viewcode-block" id="NovoBoton"><a class="viewcode-back" href="../../api/modulos.html#modulos.novo_boton.NovoBoton">[documentos]</a><span class="k">class</span> <span class="nc">NovoBoton</span><span class="p">(</span><span class="n">QtWidgets</span><span class="o">.</span><span class="n">QPushButton</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Clase personalizada NovoBoton hereda de QPushButton</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método construtor da clase </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">super</span><span class="p">(</span><span class="n">NovoBoton</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span><span class="mi">120</span><span class="p">)</span> <span class="c1"># axustamos o tamaño do botón</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setCheckable</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+        
+<div class="viewcode-block" id="NovoBoton.engade_icona_info_txt"><a class="viewcode-back" href="../../api/modulos.html#modulos.novo_boton.NovoBoton.engade_icona_info_txt">[documentos]</a>    <span class="k">def</span> <span class="nf">engade_icona_info_txt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">icona</span><span class="p">,</span><span class="n">txt</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método para engadir icona, axustar o seu tamaño e engadir axuda textual a cada obxecto da clase NovoBoton</span>
+<span class="sd">            Recibe como parámetros o nome da icona e un texto que formará parte da axuda textual do botón</span>
+<span class="sd">        Args:</span>
+<span class="sd">            param1 (str): nome do arquivo de imaxe a amosar no botón</span>
+<span class="sd">            param2 (str): axuda textual</span>
+<span class="sd">    </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setIcon</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QIcon</span><span class="p">(</span><span class="n">icona</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setIconSize</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QSize</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">))</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="s2">&quot;Este é o botón &quot;</span> <span class="o">+</span> <span class="n">txt</span><span class="p">)</span></div></div>
+
+  
+
+   
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Código de módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulos.novo_boton</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2021, Miguel López Patricio.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>

@@ -170,7 +170,7 @@ def convert_shape_format(shape):
 
 
     for i, pos in enumerate(positions):
-        positions[i] = (pos[0] - 2, pos[i] - 4) 
+        positions[i] = (pos[0] - 2, pos[1] - 4) 
 
     return positions
 
@@ -207,15 +207,15 @@ def get_shape():
 def draw_text_middle(text, size, color, surface):
     pass
     
-def draw_grid(surface, grid):
+def draw_grid(surface, row, col):
     sx = top_left_x
     sy = top_left_y
 
-    for i in range(len(grid)):
-        pygame.draw.line(surface, (128,128,128), (sx, sy + i * block_size), (sx + play_width, sy + i*block_size))
+    for i in range(row):
+        pygame.draw.line(surface, (128,128,128), (sx, sy + i * 30), (sx + play_width, sy + i*30))
 
-        for j in range(len(grid[i])):
-            pygame.draw.line(surface, (128,128,128), (sx + j * block_size, sy), (sx + j * block_size, sy + play_height))
+        for j in range(col):
+            pygame.draw.line(surface, (128,128,128), (sx + j * 30, sy), (sx + j * 30, sy + play_height))
 
             
 
@@ -248,10 +248,11 @@ def draw_window(surface, grid):
     pygame.display.update()
 
 
-    draw_grid(surface, grid)
-    pygame.display.update()
+    draw_grid(surface, 20,10)
+    pygame.draw.rect(surface,(255,0,0), (top_left_x, top_left_y, play_width, play_height), 5)
 
 def main(win):
+    global grid
     locked_positions = {}
     grid = create_grid(locked_positions)
 
@@ -259,7 +260,7 @@ def main(win):
     run = True
     current_piece = get_shape()
     next_piece = get_shape()
-    clock = pygame.time.clock()
+    clock = pygame.time.Clock()
     fall_time = 0
     fall_speed = 0.27
 
@@ -290,7 +291,7 @@ def main(win):
 
                 if event.key == pygame.K_RIGHT:
                     current_piece.x += 1
-                    if not(valid_space(current_piece),grid):
+                    if not(valid_space(current_piece,grid)):
                         current_piece.x -= 1
 
                 if event.key == pygame.K_UP:
@@ -336,9 +337,10 @@ pygame.display.quit()
 def main_menu():
     run = True
     while run:
-        win.fill((0,0,0))
-        draw_text_middle('Press any key to begin.', 60, (255, 255, 255), win)
+        win.fill(0,0,0)
+        draw_text_middle('Press any key to play', 60, (255,255,255),win)
         pygame.display.update()
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -346,6 +348,7 @@ def main_menu():
             if event.type == pygame.KEYDOWN:
                 main()
     pygame.quit()
+
 
 
 win = pygame.display.set_mode((s_width, s_height))

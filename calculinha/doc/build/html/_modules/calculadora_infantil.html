@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora_infantil &#8212; documentación de Calculiña - 1.0.0</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/zerovm.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Código de módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">calculadora_infantil</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Código fuente para calculadora_infantil</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; Módulo principal da aplicación Calculiña</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Módulos a importar necesarios para o funcionamento da aplicación</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">PySide2</span> <span class="kn">import</span> <span class="n">QtCore</span><span class="p">,</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtWidgets</span>
+<span class="kn">from</span> <span class="nn">PySide2.QtWidgets</span> <span class="kn">import</span> <span class="n">QDialog</span>
+<span class="kn">from</span> <span class="nn">PySide2.QtWidgets</span> <span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QLabel</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="p">,</span> <span class="n">QGraphicsPixmapItem</span><span class="p">,</span> <span class="n">QGraphicsScene</span><span class="p">,</span> <span class="n">QMainWindow</span><span class="p">,</span> <span class="n">QVBoxLayout</span>
+<span class="kn">from</span> <span class="nn">PySide2.QtGui</span> <span class="kn">import</span> <span class="n">QPixmap</span>
+<span class="kn">from</span> <span class="nn">modulos.InfoVentanaAp</span> <span class="kn">import</span> <span class="n">InfoVentana</span>
+<span class="kn">from</span> <span class="nn">modulos.calculinhaWindow</span> <span class="kn">import</span> <span class="n">Ui_MainWindow</span>
+<span class="kn">from</span> <span class="nn">modulos.ventana_pdf</span> <span class="kn">import</span> <span class="n">PdfWindow</span>
+
+
+
+<div class="viewcode-block" id="CalculinhaApp"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp">[documentos]</a><span class="k">class</span> <span class="nc">CalculinhaApp</span><span class="p">(</span><span class="n">QMainWindow</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Clase CalculinhaApp do módulo principal da aplicación</span>
+<span class="sd">        Xera a ventana principal que amosará a calculadora</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="sd">&quot;&quot;&quot; Propiedades da clase &quot;&quot;&quot;</span>
+   
+    <span class="n">primeiro_num</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="sd">&quot;&quot;&quot; float: Variable primeiro_num &quot;&quot;&quot;</span>
+
+    <span class="n">escribindo_segundo_num</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="sd">&quot;&quot;&quot; boolean: Variable escribindo_segundo_num  &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; método construtor da clase</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span> <span class="o">=</span> <span class="n">Ui_MainWindow</span><span class="p">()</span>
+        
+
+        <span class="c1"># amosando imaxe cabeceira  </span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">cabeceira</span>  <span class="o">=</span> <span class="n">QLabel</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cabeceira</span><span class="o">.</span><span class="n">setGeometry</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pixmap</span> <span class="o">=</span> <span class="n">QPixmap</span><span class="p">(</span><span class="s1">&#39;./imaxes/cabeceira.png&#39;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">cabeceira</span><span class="o">.</span><span class="n">setPixmap</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pixmap</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cabeceira</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pixmap</span><span class="o">.</span><span class="n">width</span><span class="p">(),</span><span class="bp">self</span><span class="o">.</span><span class="n">pixmap</span><span class="o">.</span><span class="n">height</span><span class="p">())</span>
+        
+
+        <span class="c1"># fixando o tamaño da ventana principal</span>
+        <span class="n">ancho</span> <span class="o">=</span> <span class="mi">620</span>
+        <span class="n">alto</span> <span class="o">=</span> <span class="mi">780</span>
+   
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="n">ancho</span><span class="p">,</span> <span class="n">alto</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">setupUi</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        
+        <span class="c1"># creamos un obxecto InfoVentana para a opción do menú: información sobre a app</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sobreAapp</span> <span class="o">=</span> <span class="n">InfoVentana</span><span class="p">()</span>
+
+        
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+       
+        <span class="sd">&quot;&quot;&quot; engadindo iconas e axuda textual a cada botón</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCero</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/cero.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número cero&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonUn</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/un.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número un&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDous</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/dous.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número dous&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonTres</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/tres.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número tres&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCatro</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/catro.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número catro&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCinco</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/cinco.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número cinco&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSeis</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/seis.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número seis&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSete</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/sete.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número sete&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonOito</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/oito.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número oito&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonNove</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/nove.png&quot;</span><span class="p">,</span><span class="s2">&quot;do número nove&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonBorra</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/lixo.png&quot;</span><span class="p">,</span><span class="s2">&quot;de borrar a pantalla&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSuma</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/suma.png&quot;</span><span class="p">,</span><span class="s2">&quot;para sumar&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonResta</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/resta.png&quot;</span><span class="p">,</span><span class="s2">&quot;para restar&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonMultip</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/multiplica.png&quot;</span><span class="p">,</span><span class="s2">&quot;para multiplicar&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDivide</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/divide.png&quot;</span><span class="p">,</span><span class="s2">&quot;para dividir&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonIgual</span><span class="o">.</span><span class="n">engade_icona_info_txt</span><span class="p">(</span><span class="s2">&quot;imaxes/igual.png&quot;</span><span class="p">,</span><span class="s2">&quot;do igual&quot;</span><span class="p">)</span>
+
+        <span class="sd">&quot;&quot;&quot; Axuda textual das opcións do menú</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">menu</span><span class="o">.</span><span class="n">setToolTipsVisible</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># activamos a axuda textual en opcións do menú</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionBORRAR</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="s2">&quot;Borra a pantalla&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionMANUAL</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="s2">&quot;Accede ao manual técnico&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionSAIR</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="s2">&quot;Sae da aplicación&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionSOBRE_A_APP</span><span class="o">.</span><span class="n">setToolTip</span><span class="p">(</span><span class="s2">&quot;Información sobre a aplicación&quot;</span><span class="p">)</span>       
+        
+
+        <span class="sd">&quot;&quot;&quot; sinais e eventos dos botóns dos números da calculadora</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonUn</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDous</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonTres</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCatro</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCinco</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSeis</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSete</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonOito</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonNove</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonCero</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_num</span><span class="p">)</span>
+
+
+        <span class="sd">&quot;&quot;&quot; sinais e eventos dos botóns das operacións matemáticas da calculadora</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSuma</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_operacion</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonResta</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_operacion</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDivide</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_operacion</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonMultip</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_operacion</span><span class="p">)</span>
+        
+        <span class="c1"># sinal e evento do botón de resultado</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonIgual</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">preme_resultado</span><span class="p">)</span>
+
+        <span class="c1"># sinal e evento do botón AC</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonBorra</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">limpa_display</span><span class="p">)</span>
+
+
+        <span class="c1"># sinais e eventos para opcions menú</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionSOBRE_A_APP</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sobreAapp</span><span class="o">.</span><span class="n">amosar_ventana</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionBORRAR</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">limpa_display</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionMANUAL</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">manual_app</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">actionSAIR</span><span class="o">.</span><span class="n">triggered</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">closeEvent</span><span class="p">)</span>
+
+
+    
+<div class="viewcode-block" id="CalculinhaApp.preme_num"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.preme_num">[documentos]</a>    <span class="k">def</span> <span class="nf">preme_num</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método que amosará os números que se premen    </span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">boton_premido</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span>  <span class="c1"># esta variable gardará o sinal do botón premido</span>
+        <span class="sd">&quot;&quot;&quot;object: variable boton_premido garda o sinal do botón premido &quot;&quot;&quot;</span>
+
+
+        <span class="sd">&quot;&quot;&quot; si algún botón de operación foi premido pois gardamos o número que estaba en pantalla</span>
+<span class="sd">            verifica que non hai </span>
+
+<span class="sd">        &quot;&quot;&quot;</span> 
+        <span class="k">if</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSuma</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonResta</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="ow">or</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonMultip</span><span class="o">.</span><span class="n">isChecked</span><span class="p">()</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDivide</span><span class="o">.</span><span class="n">isChecked</span><span class="p">())</span> <span class="ow">and</span>
+         <span class="p">(</span><span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">escribindo_segundo_num</span><span class="p">)):</span>
+
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">boton_premido</span><span class="o">.</span><span class="n">text</span><span class="p">()),</span><span class="s1">&#39;.15g&#39;</span><span class="p">)</span> <span class="c1"># o formato aplicado é para eliminar o cero da esquerda eliminar decimais</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">escribindo_segundo_num</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">else</span><span class="p">:</span><span class="c1"># caso contrario seguimos acumulando números </span>
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">text</span><span class="p">()</span><span class="o">+</span> <span class="n">boton_premido</span><span class="o">.</span><span class="n">text</span><span class="p">()),</span><span class="s1">&#39;.15g&#39;</span><span class="p">)</span>
+        
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">nova_etiqueta</span><span class="p">)</span> <span class="c1"># amosamos o resultado na pantalla da calculadora</span></div>
+
+
+
+<div class="viewcode-block" id="CalculinhaApp.preme_resultado"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.preme_resultado">[documentos]</a>    <span class="k">def</span> <span class="nf">preme_resultado</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método para ofrecer o resultado da operación</span>
+<span class="sd">            Cando o usuario preme &#39;=&#39; garda o número que se estea amosando</span>
+<span class="sd">            e se ofrecerá o resultado da operación</span>
+<span class="sd">            Pon a False o botón da operación realizada</span>
+<span class="sd">        </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">segundo_num</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">text</span><span class="p">())</span> <span class="c1"># pasamos a float o texto do display e o gardamos </span>
+        <span class="sd">&quot;&quot;&quot; float: Variable segundo_numero garda o dato actual en lineEditDisplay &quot;&quot;&quot;</span>
+
+        <span class="c1"># compróbase se algún dos botóns de operación están pulsados</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSuma</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>
+            <span class="n">display_numero</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">primeiro_num</span> <span class="o">+</span> <span class="n">segundo_num</span>    <span class="c1"># facemos a operación e gardamos o resultado</span>
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">display_numero</span><span class="p">,</span> <span class="s1">&#39;.15g&#39;</span><span class="p">)</span>      <span class="c1"># formateamos o resultado</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">nova_etiqueta</span><span class="p">)</span>      <span class="c1"># amosamos o resultado por pantalla        </span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonSuma</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>            <span class="c1"># cambiamos o estado do botón</span>
+
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonResta</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>
+            <span class="n">display_numero</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">primeiro_num</span> <span class="o">-</span> <span class="n">segundo_num</span>
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">display_numero</span><span class="p">,</span> <span class="s1">&#39;.15g&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">nova_etiqueta</span><span class="p">)</span>        
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonResta</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDivide</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>
+            <span class="n">display_numero</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">primeiro_num</span> <span class="o">/</span> <span class="n">segundo_num</span>
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">display_numero</span><span class="p">,</span> <span class="s1">&#39;.15g&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">nova_etiqueta</span><span class="p">)</span>        
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonDivide</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonMultip</span><span class="o">.</span><span class="n">isChecked</span><span class="p">():</span>
+            <span class="n">display_numero</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">primeiro_num</span> <span class="o">*</span> <span class="n">segundo_num</span>
+            <span class="n">nova_etiqueta</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">display_numero</span><span class="p">,</span> <span class="s1">&#39;.15g&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">nova_etiqueta</span><span class="p">)</span>        
+            <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">pushButtonMultip</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">escribindo_segundo_num</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+<div class="viewcode-block" id="CalculinhaApp.preme_operacion"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.preme_operacion">[documentos]</a>    <span class="k">def</span> <span class="nf">preme_operacion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Cando o usuario preme algún botón de operación</span>
+<span class="sd">            este método gardará o número amosado na pantalla como primeiro número</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">boton_premido</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sender</span><span class="p">()</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">primeiro_num</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">text</span><span class="p">())</span>
+
+        <span class="n">boton_premido</span><span class="o">.</span><span class="n">setChecked</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CalculinhaApp.limpa_display"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.limpa_display">[documentos]</a>    <span class="k">def</span> <span class="nf">limpa_display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método que borra a pantalla amosando un cero</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ui</span><span class="o">.</span><span class="n">lineEditDisplay</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="s1">&#39;0&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CalculinhaApp.manual_app"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.manual_app">[documentos]</a>    <span class="k">def</span> <span class="nf">manual_app</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método que amosará o manual do código da aplicación en formato pdf</span>
+<span class="sd">            Crea un obxecto da clase PdfWindow e chama ao método showPdf </span>
+<span class="sd">            enviando a ruta e nome do arquivo pdf</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">pdf_window</span> <span class="o">=</span> <span class="n">PdfWindow</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pdf_window</span><span class="o">.</span><span class="n">showPdf</span><span class="p">(</span><span class="s2">&quot;doc/calculinha.pdf&quot;</span><span class="p">)</span></div>
+
+        
+
+       
+<div class="viewcode-block" id="CalculinhaApp.sair"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.sair">[documentos]</a>    <span class="k">def</span> <span class="nf">sair</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método para sair da aplicación</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span></div>
+      
+
+
+    
+<div class="viewcode-block" id="CalculinhaApp.closeEvent"><a class="viewcode-back" href="../api/modulos.html#calculadora_infantil.CalculinhaApp.closeEvent">[documentos]</a>    <span class="k">def</span> <span class="nf">closeEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">evento</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Método para preguntar ao usuario se confirma a saída da aplicación</span>
+
+<span class="sd">        Args:          </span>
+<span class="sd">            param2 (event): evento co que se relaciona.</span>
+<span class="sd">       </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># almacenamos a opción pulsada no QMessageBox</span>
+        <span class="n">queFacer</span> <span class="o">=</span> <span class="n">QMessageBox</span><span class="o">.</span><span class="n">question</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;Sair&#39;</span><span class="p">,</span> <span class="s1">&#39;Seguro que quere sair?&#39;</span><span class="p">,</span> <span class="n">QMessageBox</span><span class="o">.</span><span class="n">Ok</span><span class="o">|</span><span class="n">QMessageBox</span><span class="o">.</span><span class="n">No</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">queFacer</span> <span class="o">==</span> <span class="n">QMessageBox</span><span class="o">.</span><span class="n">Ok</span><span class="p">:</span> <span class="c1"># si OK entón sáese da app</span>
+            <span class="c1">#evento.accept()</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">evento</span><span class="o">.</span><span class="n">ignore</span><span class="p">()</span> <span class="c1"># caso contrario continúa a app    </span></div></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Inicialización e execución da app</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+    <span class="n">ui</span> <span class="o">=</span> <span class="n">CalculinhaApp</span><span class="p">()</span>
+    <span class="n">ui</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">())</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Código de módulo</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">calculadora_infantil</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2021, Miguel López Patricio.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>

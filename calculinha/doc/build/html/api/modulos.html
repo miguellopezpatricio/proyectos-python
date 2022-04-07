@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>modulos package &#8212; documentación de Calculiña - 1.0.0</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/zerovm.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="Calculiña" href="../README.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="../README.html" title="Calculiña"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulos package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-modulos">
+<span id="modulos-package"></span><h1>modulos package<a class="headerlink" href="#module-modulos" title="Enlazar permanentemente con este título">¶</a></h1>
+<section id="module-calculadora_infantil">
+<span id="calculadora-infantil-module"></span><h2>calculadora_infantil module<a class="headerlink" href="#module-calculadora_infantil" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo principal da aplicación Calculiña</p>
+<dl class="py class">
+<dt id="calculadora_infantil.CalculinhaApp">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">calculadora_infantil.</span></code><code class="sig-name descname"><span class="pre">CalculinhaApp</span></code><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide2.QtWidgets.QMainWindow</span></code></p>
+<p>Clase CalculinhaApp do módulo principal da aplicación
+Xera a ventana principal que amosará a calculadora</p>
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.closeEvent">
+<code class="sig-name descname"><span class="pre">closeEvent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evento</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.closeEvent"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.closeEvent" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método para preguntar ao usuario se confirma a saída da aplicación</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>param2</strong> (<em>event</em>) – evento co que se relaciona.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="calculadora_infantil.CalculinhaApp.escribindo_segundo_num">
+<code class="sig-name descname"><span class="pre">escribindo_segundo_num</span></code><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.escribindo_segundo_num" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Variable escribindo_segundo_num</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.limpa_display">
+<code class="sig-name descname"><span class="pre">limpa_display</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.limpa_display"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.limpa_display" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método que borra a pantalla amosando un cero</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.manual_app">
+<code class="sig-name descname"><span class="pre">manual_app</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.manual_app"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.manual_app" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método que amosará o manual do código da aplicación en formato pdf
+Crea un obxecto da clase PdfWindow e chama ao método showPdf
+enviando a ruta e nome do arquivo pdf</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.preme_num">
+<code class="sig-name descname"><span class="pre">preme_num</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.preme_num"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.preme_num" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método que amosará os números que se premen</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.preme_operacion">
+<code class="sig-name descname"><span class="pre">preme_operacion</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.preme_operacion"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.preme_operacion" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Cando o usuario preme algún botón de operación
+este método gardará o número amosado na pantalla como primeiro número</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.preme_resultado">
+<code class="sig-name descname"><span class="pre">preme_resultado</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.preme_resultado"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.preme_resultado" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método para ofrecer o resultado da operación
+Cando o usuario preme “=” garda o número que se estea amosando
+e se ofrecerá o resultado da operación
+Pon a False o botón da operación realizada</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="calculadora_infantil.CalculinhaApp.primeiro_num">
+<code class="sig-name descname"><span class="pre">primeiro_num</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.primeiro_num" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Variable primeiro_num</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="calculadora_infantil.CalculinhaApp.sair">
+<code class="sig-name descname"><span class="pre">sair</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/calculadora_infantil.html#CalculinhaApp.sair"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.sair" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método para sair da aplicación</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="calculadora_infantil.CalculinhaApp.staticMetaObject">
+<code class="sig-name descname"><span class="pre">staticMetaObject</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;PySide2.QtCore.QMetaObject</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#calculadora_infantil.CalculinhaApp.staticMetaObject" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modulos.InfoVentanaAp">
+<span id="modulos-infoventanaap-module"></span><h2>modulos.InfoVentanaAp module<a class="headerlink" href="#module-modulos.InfoVentanaAp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo da clase InfoVentana
+para xerar a ventana de información da aplicación</p>
+<dl class="py class">
+<dt id="modulos.InfoVentanaAp.InfoVentana">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">modulos.InfoVentanaAp.</span></code><code class="sig-name descname"><span class="pre">InfoVentana</span></code><a class="reference internal" href="../_modules/modulos/InfoVentanaAp.html#InfoVentana"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.InfoVentanaAp.InfoVentana" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide2.QtWidgets.QMainWindow</span></code></p>
+<p>Clase InfoVentana que usaremos para crear unha ventana de información sobre a aplicación</p>
+<dl class="py method">
+<dt id="modulos.InfoVentanaAp.InfoVentana.amosar_ventana">
+<code class="sig-name descname"><span class="pre">amosar_ventana</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/InfoVentanaAp.html#InfoVentana.amosar_ventana"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.InfoVentanaAp.InfoVentana.amosar_ventana" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Método para amosar ventana</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="modulos.InfoVentanaAp.InfoVentana.staticMetaObject">
+<code class="sig-name descname"><span class="pre">staticMetaObject</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;PySide2.QtCore.QMetaObject</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#modulos.InfoVentanaAp.InfoVentana.staticMetaObject" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modulos.calculinhaWindow">
+<span id="modulos-calculinhawindow-module"></span><h2>modulos.calculinhaWindow module<a class="headerlink" href="#module-modulos.calculinhaWindow" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo calculinhaWindow
+que servirá como modelo da calculadora</p>
+<dl class="py class">
+<dt id="modulos.calculinhaWindow.Ui_MainWindow">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">modulos.calculinhaWindow.</span></code><code class="sig-name descname"><span class="pre">Ui_MainWindow</span></code><a class="reference internal" href="../_modules/modulos/calculinhaWindow.html#Ui_MainWindow"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.calculinhaWindow.Ui_MainWindow" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase principal Ui_MainWindow
+Servirá como base da calculadora</p>
+<dl class="py method">
+<dt id="modulos.calculinhaWindow.Ui_MainWindow.retranslateUi">
+<code class="sig-name descname"><span class="pre">retranslateUi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">MainWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/calculinhaWindow.html#Ui_MainWindow.retranslateUi"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.calculinhaWindow.Ui_MainWindow.retranslateUi" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="modulos.calculinhaWindow.Ui_MainWindow.setupUi">
+<code class="sig-name descname"><span class="pre">setupUi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">MainWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/calculinhaWindow.html#Ui_MainWindow.setupUi"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.calculinhaWindow.Ui_MainWindow.setupUi" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modulos.info_ventana">
+<span id="modulos-info-ventana-module"></span><h2>modulos.info_ventana module<a class="headerlink" href="#module-modulos.info_ventana" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo da clase Ui_infoWindow
+Servirá para xerar unha ventana de info da app</p>
+<dl class="py class">
+<dt id="modulos.info_ventana.Ui_infoWindow">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">modulos.info_ventana.</span></code><code class="sig-name descname"><span class="pre">Ui_infoWindow</span></code><a class="reference internal" href="../_modules/modulos/info_ventana.html#Ui_infoWindow"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.info_ventana.Ui_infoWindow" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase para xerar unha ventana de información da aplicación</p>
+<dl class="py method">
+<dt id="modulos.info_ventana.Ui_infoWindow.retranslateUi">
+<code class="sig-name descname"><span class="pre">retranslateUi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infoWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/info_ventana.html#Ui_infoWindow.retranslateUi"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.info_ventana.Ui_infoWindow.retranslateUi" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="modulos.info_ventana.Ui_infoWindow.setupUi">
+<code class="sig-name descname"><span class="pre">setupUi</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infoWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/info_ventana.html#Ui_infoWindow.setupUi"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.info_ventana.Ui_infoWindow.setupUi" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modulos.novo_boton">
+<span id="modulos-novo-boton-module"></span><h2>modulos.novo_boton module<a class="headerlink" href="#module-modulos.novo_boton" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo novo_boton
+para xerar obxectos personalizados de tipo botón</p>
+<dl class="py class">
+<dt id="modulos.novo_boton.NovoBoton">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">modulos.novo_boton.</span></code><code class="sig-name descname"><span class="pre">NovoBoton</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/novo_boton.html#NovoBoton"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.novo_boton.NovoBoton" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide2.QtWidgets.QPushButton</span></code></p>
+<p>Clase personalizada NovoBoton hereda de QPushButton</p>
+<dl class="py method">
+<dt id="modulos.novo_boton.NovoBoton.engade_icona_info_txt">
+<code class="sig-name descname"><span class="pre">engade_icona_info_txt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icona</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/novo_boton.html#NovoBoton.engade_icona_info_txt"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.novo_boton.NovoBoton.engade_icona_info_txt" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><dl class="simple">
+<dt>Método para engadir icona, axustar o seu tamaño e engadir axuda textual a cada obxecto da clase NovoBoton</dt><dd><p>Recibe como parámetros o nome da icona e un texto que formará parte da axuda textual do botón</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param1</strong> (<em>str</em>) – nome do arquivo de imaxe a amosar no botón</p></li>
+<li><p><strong>param2</strong> (<em>str</em>) – axuda textual</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="modulos.novo_boton.NovoBoton.staticMetaObject">
+<code class="sig-name descname"><span class="pre">staticMetaObject</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;PySide2.QtCore.QMetaObject</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#modulos.novo_boton.NovoBoton.staticMetaObject" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modulos.ventana_pdf">
+<span id="modulos-ventana-pdf-module"></span><h2>modulos.ventana_pdf module<a class="headerlink" href="#module-modulos.ventana_pdf" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Módulo ventana_pdf
+para xerar a ventana que amosará o manual da aplicación</p>
+<dl class="py class">
+<dt id="modulos.ventana_pdf.PdfWindow">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">modulos.ventana_pdf.</span></code><code class="sig-name descname"><span class="pre">PdfWindow</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/ventana_pdf.html#PdfWindow"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.ventana_pdf.PdfWindow" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide2.QtWidgets.QMainWindow</span></code></p>
+<p>Clase PdfWindow para xerar unha ventana que amosará o manual en pdf</p>
+<dl class="py method">
+<dt id="modulos.ventana_pdf.PdfWindow.showPdf">
+<code class="sig-name descname"><span class="pre">showPdf</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir_arquivo</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/modulos/ventana_pdf.html#PdfWindow.showPdf"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modulos.ventana_pdf.PdfWindow.showPdf" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><dl class="simple">
+<dt>Método para amosar o pdf nunha ventana</dt><dd><p>Recibe como parámetro a ruta co nome do arquivo</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros</dt>
+<dd class="field-odd"><p><strong>dir_arquivo</strong> (<em>str</em>) – Ruta ao pdf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="modulos.ventana_pdf.PdfWindow.staticMetaObject">
+<code class="sig-name descname"><span class="pre">staticMetaObject</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;PySide2.QtCore.QMetaObject</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#modulos.ventana_pdf.PdfWindow.staticMetaObject" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Tabla de contenido</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">modulos package</a><ul>
+<li><a class="reference internal" href="#module-calculadora_infantil">calculadora_infantil module</a></li>
+<li><a class="reference internal" href="#module-modulos.InfoVentanaAp">modulos.InfoVentanaAp module</a></li>
+<li><a class="reference internal" href="#module-modulos.calculinhaWindow">modulos.calculinhaWindow module</a></li>
+<li><a class="reference internal" href="#module-modulos.info_ventana">modulos.info_ventana module</a></li>
+<li><a class="reference internal" href="#module-modulos.novo_boton">modulos.novo_boton module</a></li>
+<li><a class="reference internal" href="#module-modulos.ventana_pdf">modulos.ventana_pdf module</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="../README.html"
+                        title="capítulo anterior">Calculiña</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/modulos.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="../README.html" title="Calculiña"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">modulos package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2021, Miguel López Patricio.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+\indexentry{módulo@\spxentry{módulo}!modulos@\spxentry{modulos}|hyperpage}{7}
+\indexentry{modulos@\spxentry{modulos}!módulo@\spxentry{módulo}|hyperpage}{7}
+\indexentry{módulo@\spxentry{módulo}!calculadora\_infantil@\spxentry{calculadora\_infantil}|hyperpage}{7}
+\indexentry{calculadora\_infantil@\spxentry{calculadora\_infantil}!módulo@\spxentry{módulo}|hyperpage}{7}
+\indexentry{CalculinhaApp (clase en calculadora\_infantil)@\spxentry{CalculinhaApp}\spxextra{clase en calculadora\_infantil}|hyperpage}{7}
+\indexentry{closeEvent() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{closeEvent()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{escribindo\_segundo\_num (atributo de calculadora\_infantil.CalculinhaApp)@\spxentry{escribindo\_segundo\_num}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{limpa\_display() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{limpa\_display()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{manual\_app() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{manual\_app()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{preme\_num() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{preme\_num()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{preme\_operacion() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{preme\_operacion()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{preme\_resultado() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{preme\_resultado()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{primeiro\_num (atributo de calculadora\_infantil.CalculinhaApp)@\spxentry{primeiro\_num}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}|hyperpage}{7}
+\indexentry{sair() (método de calculadora\_infantil.CalculinhaApp)@\spxentry{sair()}\spxextra{método de calculadora\_infantil.CalculinhaApp}|hyperpage}{8}
+\indexentry{staticMetaObject (atributo de calculadora\_infantil.CalculinhaApp)@\spxentry{staticMetaObject}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}|hyperpage}{8}
+\indexentry{módulo@\spxentry{módulo}!modulos.InfoVentanaAp@\spxentry{modulos.InfoVentanaAp}|hyperpage}{8}
+\indexentry{modulos.InfoVentanaAp@\spxentry{modulos.InfoVentanaAp}!módulo@\spxentry{módulo}|hyperpage}{8}
+\indexentry{InfoVentana (clase en modulos.InfoVentanaAp)@\spxentry{InfoVentana}\spxextra{clase en modulos.InfoVentanaAp}|hyperpage}{8}
+\indexentry{amosar\_ventana() (método de modulos.InfoVentanaAp.InfoVentana)@\spxentry{amosar\_ventana()}\spxextra{método de modulos.InfoVentanaAp.InfoVentana}|hyperpage}{8}
+\indexentry{staticMetaObject (atributo de modulos.InfoVentanaAp.InfoVentana)@\spxentry{staticMetaObject}\spxextra{atributo de modulos.InfoVentanaAp.InfoVentana}|hyperpage}{8}
+\indexentry{módulo@\spxentry{módulo}!modulos.calculinhaWindow@\spxentry{modulos.calculinhaWindow}|hyperpage}{8}
+\indexentry{modulos.calculinhaWindow@\spxentry{modulos.calculinhaWindow}!módulo@\spxentry{módulo}|hyperpage}{8}
+\indexentry{Ui\_MainWindow (clase en modulos.calculinhaWindow)@\spxentry{Ui\_MainWindow}\spxextra{clase en modulos.calculinhaWindow}|hyperpage}{8}
+\indexentry{retranslateUi() (método de modulos.calculinhaWindow.Ui\_MainWindow)@\spxentry{retranslateUi()}\spxextra{método de modulos.calculinhaWindow.Ui\_MainWindow}|hyperpage}{8}
+\indexentry{setupUi() (método de modulos.calculinhaWindow.Ui\_MainWindow)@\spxentry{setupUi()}\spxextra{método de modulos.calculinhaWindow.Ui\_MainWindow}|hyperpage}{8}
+\indexentry{módulo@\spxentry{módulo}!modulos.info\_ventana@\spxentry{modulos.info\_ventana}|hyperpage}{8}
+\indexentry{modulos.info\_ventana@\spxentry{modulos.info\_ventana}!módulo@\spxentry{módulo}|hyperpage}{8}
+\indexentry{Ui\_infoWindow (clase en modulos.info\_ventana)@\spxentry{Ui\_infoWindow}\spxextra{clase en modulos.info\_ventana}|hyperpage}{8}
+\indexentry{retranslateUi() (método de modulos.info\_ventana.Ui\_infoWindow)@\spxentry{retranslateUi()}\spxextra{método de modulos.info\_ventana.Ui\_infoWindow}|hyperpage}{8}
+\indexentry{setupUi() (método de modulos.info\_ventana.Ui\_infoWindow)@\spxentry{setupUi()}\spxextra{método de modulos.info\_ventana.Ui\_infoWindow}|hyperpage}{8}
+\indexentry{módulo@\spxentry{módulo}!modulos.novo\_boton@\spxentry{modulos.novo\_boton}|hyperpage}{9}
+\indexentry{modulos.novo\_boton@\spxentry{modulos.novo\_boton}!módulo@\spxentry{módulo}|hyperpage}{9}
+\indexentry{NovoBoton (clase en modulos.novo\_boton)@\spxentry{NovoBoton}\spxextra{clase en modulos.novo\_boton}|hyperpage}{9}
+\indexentry{engade\_icona\_info\_txt() (método de modulos.novo\_boton.NovoBoton)@\spxentry{engade\_icona\_info\_txt()}\spxextra{método de modulos.novo\_boton.NovoBoton}|hyperpage}{9}
+\indexentry{staticMetaObject (atributo de modulos.novo\_boton.NovoBoton)@\spxentry{staticMetaObject}\spxextra{atributo de modulos.novo\_boton.NovoBoton}|hyperpage}{9}
+\indexentry{módulo@\spxentry{módulo}!modulos.ventana\_pdf@\spxentry{modulos.ventana\_pdf}|hyperpage}{9}
+\indexentry{modulos.ventana\_pdf@\spxentry{modulos.ventana\_pdf}!módulo@\spxentry{módulo}|hyperpage}{9}
+\indexentry{PdfWindow (clase en modulos.ventana\_pdf)@\spxentry{PdfWindow}\spxextra{clase en modulos.ventana\_pdf}|hyperpage}{9}
+\indexentry{showPdf() (método de modulos.ventana\_pdf.PdfWindow)@\spxentry{showPdf()}\spxextra{método de modulos.ventana\_pdf.PdfWindow}|hyperpage}{9}
+\indexentry{staticMetaObject (atributo de modulos.ventana\_pdf.PdfWindow)@\spxentry{staticMetaObject}\spxextra{atributo de modulos.ventana\_pdf.PdfWindow}|hyperpage}{9}

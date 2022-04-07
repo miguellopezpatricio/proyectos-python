@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>Calculiña &#8212; documentación de Calculiña - 1.0.0</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/zerovm.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="modulos package" href="api/modulos.html" />
+    <link rel="prev" title="Benvidos/as á documentación de Calculiña!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="api/modulos.html" title="modulos package"
+             accesskey="N">siguiente</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Benvidos/as á documentación de Calculiña!"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Calculiña</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="calculina">
+<h1>Calculiña<a class="headerlink" href="#calculina" title="Enlazar permanentemente con este título">¶</a></h1>
+<figure class="align-default">
+<img alt="_images/calculinha.jpg" src="_images/calculinha.jpg" />
+</figure>
+<section id="recursos-necesarios">
+<h2>Recursos necesarios<a class="headerlink" href="#recursos-necesarios" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li><p>Documentación oficial Python:
+<a class="reference external" href="https://docs.python.org/es/3/">https://docs.python.org/es/3/</a></p></li>
+<li><p>PySide2 (Qt 5 sobre Python):
+<a class="reference external" href="https://doc.qt.io/qtforpython-5/contents.html">https://doc.qt.io/qtforpython-5/contents.html</a></p></li>
+<li><p>Documentación de proxectos Python con Sphinx:
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p></li>
+<li><p>Guía para a sintaxe markdown:
+<a class="reference external" href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a></p></li>
+</ul>
+</section>
+<section id="instalacion-das-dependencias">
+<h2>Instalación das dependencias<a class="headerlink" href="#instalacion-das-dependencias" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En Linux xa temos o intérprete de Python no sistema.</p>
+<p>Pero en Windows é necesaria a instalación.</p>
+<ul class="simple">
+<li><p>Descargar <a class="reference external" href="https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe">https://www.python.org/ftp/python/3.9.4/python-3.9.4-amd64.exe</a></p></li>
+</ul>
+<blockquote>
+<div><p>e instalar como administrador.</p>
+</div></blockquote>
+<p>Instalar tamén a seguinte dependencia en Linux:</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3</span> <span class="pre">python3-pip</span></code></p>
+<p>En Windows seguir as instruccións:</p>
+<p><a class="reference external" href="https://recursospython.com/guias-y-manuales/instalacion-y-utilizacion-de-pip-en-windows-linux-y-os-x/">https://recursospython.com/guias-y-manuales/instalacion-y-utilizacion-de-pip-en-windows-linux-y-os-x/</a></p>
+</section>
+<section id="execucion-da-aplicacion">
+<h2>Execución da aplicación<a class="headerlink" href="#execucion-da-aplicacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">calculadora_infantil.py</span></code></p>
+</section>
+<section id="xerar-a-documentacion">
+<h2>Xerar a documentación<a class="headerlink" href="#xerar-a-documentacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p>Inicialmente haberá que instalar o paquete correspondente:
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">zerovm-sphinx-theme</span></code></p></li>
+<li><p>Crear unha carpeta doc e situarse nela e executar <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code></p></li>
+<li><p>Modificar/engadir as seguintes liñas en /doc/conf.py:</p>
+<p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">zerovm_sphinx_theme</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">html_theme</span> <span class="pre">=</span> <span class="pre">'zerovm'</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">html_theme_path</span> <span class="pre">=</span> <span class="pre">[zerovm_sphinx_theme.theme_path]</span></code></p>
+</li>
+<li><p>Engadir as extensións en /doc/conf.py:</p>
+<blockquote>
+<div><p>[ «sphinx.ext.intersphinx»,</p>
+<p>«sphinx.ext.autodoc»,</p>
+<p>«sphinx.ext.mathjax»,</p>
+<p>«sphinx.ext.viewcode»,]</p>
+</div></blockquote>
+</li>
+<li><p>Xerar os documentos REST:
+<code class="docutils literal notranslate"><span class="pre">sphinx-apidoc</span> <span class="pre">-f</span> <span class="pre">-M</span> <span class="pre">-o</span> <span class="pre">source/api/</span> <span class="pre">../..</span></code></p></li>
+<li><p>Xerar <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> e <code class="docutils literal notranslate"><span class="pre">index.rst</span></code></p></li>
+<li><p>Xerar a documentación (en Windows usar <code class="docutils literal notranslate"><span class="pre">.\make</span></code>):
+HTML: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>
+PDF: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">latexpdf</span></code></p></li>
+</ol>
+<p>Os resultados atoparanse en:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/doc/build/html</span></code> e en <code class="docutils literal notranslate"><span class="pre">/doc/build/latexpdf</span></code></p></li>
+</ul>
+<p>Se fose necesario desfacer o realizado executar:</p>
+<ul class="simple">
+<li><p>Terminal Linux: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code></p></li>
+<li><p>Consola Windows: <code class="docutils literal notranslate"><span class="pre">.\make</span> <span class="pre">clean</span></code></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de contenido</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Calculiña</a><ul>
+<li><a class="reference internal" href="#recursos-necesarios">Recursos necesarios</a></li>
+<li><a class="reference internal" href="#instalacion-das-dependencias">Instalación das dependencias</a></li>
+<li><a class="reference internal" href="#execucion-da-aplicacion">Execución da aplicación</a></li>
+<li><a class="reference internal" href="#xerar-a-documentacion">Xerar a documentación</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="index.html"
+                        title="capítulo anterior">Benvidos/as á documentación de Calculiña!</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="api/modulos.html"
+                        title="próximo capítulo">modulos package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/README.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="api/modulos.html" title="modulos package"
+             >siguiente</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Benvidos/as á documentación de Calculiña!"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Calculiña - 1.0.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Calculiña</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2021, Miguel López Patricio.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>

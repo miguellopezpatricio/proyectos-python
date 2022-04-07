@@ -1,0 +1,105 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{amosar\_ventana()}\spxextra{método de modulos.InfoVentanaAp.InfoVentana}, 
+		\hyperpage{8}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{calculadora\_infantil}
+    \subitem \spxentry{módulo}, \hyperpage{7}
+  \item \spxentry{CalculinhaApp}\spxextra{clase en calculadora\_infantil}, \hyperpage{7}
+  \item \spxentry{closeEvent()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{engade\_icona\_info\_txt()}\spxextra{método de modulos.novo\_boton.NovoBoton}, 
+		\hyperpage{9}
+  \item \spxentry{escribindo\_segundo\_num}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{InfoVentana}\spxextra{clase en modulos.InfoVentanaAp}, \hyperpage{8}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{limpa\_display()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{manual\_app()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+  \item \spxentry{modulos}
+    \subitem \spxentry{módulo}, \hyperpage{7}
+  \item \spxentry{modulos.calculinhaWindow}
+    \subitem \spxentry{módulo}, \hyperpage{8}
+  \item \spxentry{modulos.info\_ventana}
+    \subitem \spxentry{módulo}, \hyperpage{8}
+  \item \spxentry{modulos.InfoVentanaAp}
+    \subitem \spxentry{módulo}, \hyperpage{8}
+  \item \spxentry{modulos.novo\_boton}
+    \subitem \spxentry{módulo}, \hyperpage{9}
+  \item \spxentry{modulos.ventana\_pdf}
+    \subitem \spxentry{módulo}, \hyperpage{9}
+  \item \spxentry{módulo}
+    \subitem \spxentry{calculadora\_infantil}, \hyperpage{7}
+    \subitem \spxentry{modulos}, \hyperpage{7}
+    \subitem \spxentry{modulos.calculinhaWindow}, \hyperpage{8}
+    \subitem \spxentry{modulos.info\_ventana}, \hyperpage{8}
+    \subitem \spxentry{modulos.InfoVentanaAp}, \hyperpage{8}
+    \subitem \spxentry{modulos.novo\_boton}, \hyperpage{9}
+    \subitem \spxentry{modulos.ventana\_pdf}, \hyperpage{9}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{NovoBoton}\spxextra{clase en modulos.novo\_boton}, \hyperpage{9}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{PdfWindow}\spxextra{clase en modulos.ventana\_pdf}, \hyperpage{9}
+  \item \spxentry{preme\_num()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+  \item \spxentry{preme\_operacion()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+  \item \spxentry{preme\_resultado()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+  \item \spxentry{primeiro\_num}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{retranslateUi()}\spxextra{método de modulos.calculinhaWindow.Ui\_MainWindow}, 
+		\hyperpage{8}
+  \item \spxentry{retranslateUi()}\spxextra{método de modulos.info\_ventana.Ui\_infoWindow}, 
+		\hyperpage{8}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{sair()}\spxextra{método de calculadora\_infantil.CalculinhaApp}, \hyperpage{8}
+  \item \spxentry{setupUi()}\spxextra{método de modulos.calculinhaWindow.Ui\_MainWindow}, 
+		\hyperpage{8}
+  \item \spxentry{setupUi()}\spxextra{método de modulos.info\_ventana.Ui\_infoWindow}, 
+		\hyperpage{8}
+  \item \spxentry{showPdf()}\spxextra{método de modulos.ventana\_pdf.PdfWindow}, \hyperpage{9}
+  \item \spxentry{staticMetaObject}\spxextra{atributo de calculadora\_infantil.CalculinhaApp}, 
+		\hyperpage{8}
+  \item \spxentry{staticMetaObject}\spxextra{atributo de modulos.InfoVentanaAp.InfoVentana}, 
+		\hyperpage{8}
+  \item \spxentry{staticMetaObject}\spxextra{atributo de modulos.novo\_boton.NovoBoton}, 
+		\hyperpage{9}
+  \item \spxentry{staticMetaObject}\spxextra{atributo de modulos.ventana\_pdf.PdfWindow}, 
+		\hyperpage{9}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{Ui\_infoWindow}\spxextra{clase en modulos.info\_ventana}, \hyperpage{8}
+  \item \spxentry{Ui\_MainWindow}\spxextra{clase en modulos.calculinhaWindow}, \hyperpage{8}
+
+\end{sphinxtheindex}

@@ -1,0 +1,1012 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.23)  4 MAY 2021 16:47
+entering extended mode
+**./calculia.tex
+(calculia.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (sphinxmanual.cls
+Document Class: sphinxmanual 2019/12/01 v2.3.0 Document class (Sphinx manual)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+LaTeX Info: Redefining \and on input line 35.
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+2500 (decimal 9472)
+   defining Unicode char U+2502 (decimal 9474)
+   defining Unicode char U+2514 (decimal 9492)
+   defining Unicode char U+251C (decimal 9500)
+   defining Unicode char U+2572 (decimal 9586)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/cmap\cmap.sty
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+<<t1.cmap>>)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen139
+))
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count188
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count189
+\leftroot@=\count190
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count191
+\DOTSCASE@=\count192
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
+\dotsspace@=\muskip16
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
+\tag@help=\toks18
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/04/07 3.57 The Babel package
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/04/07 3.57 Babel common definitions
+\babel@savecnt=\count266
+\U@D=\dimen148
+\l@babelnohyphens=\language79
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count267
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.
+ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+\es@quottoks=\toks22
+\es@quotdepth=\count268
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+)) (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip52
+\mylen=\skip53
+\myhi=\skip54
+\px=\skip55
+\py=\skip56
+\pyy=\skip57
+\pxx=\skip58
+) (sphinx.sty
+Package: sphinx 2021/01/23 v3.5.0 LaTeX package (Sphinx markup)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+) (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box49
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
+\ttl@plus=\dimen151
+\ttl@minus=\dimen152
+\ttl@toksa=\toks24
+\titlewidth=\dimen153
+\titlewidthlast=\dimen154
+\titlewidthfirst=\dimen155
+) (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/tabulary\tabulary.st
+y
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen156
+\ar@mcellbox=\box50
+\extrarowheight=\dimen157
+\NC@list=\toks25
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box51
+)
+\TY@count=\count269
+\TY@linewidth=\dimen158
+\tymin=\dimen159
+\tymax=\dimen160
+\TY@tablewidth=\dimen161
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\longtable.
+sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip72
+\LTright=\skip73
+\LTpre=\skip74
+\LTpost=\skip75
+\LTchunksize=\count270
+\LTcapwidth=\dimen162
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count271
+\LT@rows=\count272
+\c@LT@tables=\count273
+\c@LT@chunks=\count274
+\LT@p@ftn=\toks26
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count275
+\@vwid@loff=\dimen163
+\@vwid@roff=\dimen164
+) (sphinxmulticell.sty
+Package: sphinxmulticell 2017/02/23 v1.6 better span rows and columns of a tabl
+e (Sphinx team)
+\sphinx@TY@tablewidth=\dimen165
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip76
+\fb@frw=\dimen166
+\fb@frh=\dimen167
+\FrameRule=\dimen168
+\FrameSep=\dimen169
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count276
+\FV@InFile=\read3
+\FV@TabBox=\box57
+\c@FancyVerbLine=\count277
+\FV@StepNumber=\count278
+\FV@OutFile=\write3
+) (footnotehyper-sphinx.sty
+Package: footnotehyper-sphinx 2021/02/04 v1.1d hyperref aware footnote.sty for 
+sphinx (JFB)
+\FNH@notes=\box58
+\FNH@toks=\toks27
+\FNH@width=\dimen170
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks28
+\float@box=\box59
+\@float@everytoks=\toks29
+\@floatcapt=\box60
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen171
+\WF@size=\dimen172
+\c@WF@wrappedlines=\count280
+\WF@box=\box61
+\WF@everypar=\toks30
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+Rollback for package 'parskip' requested -> version 'v1'.
+         This corresponds to the release introduced on 2001-04-09.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip-2001-0
+4-09.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+))
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.st
+y
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\multicol.s
+ty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count281
+\mult@box=\box62
+\multicol@leftmargin=\dimen173
+\c@unbalance=\count282
+\c@collectmore=\count283
+\doublecol@number=\count284
+\multicoltolerance=\count285
+\multicolpretolerance=\count286
+\full@width=\dimen174
+\page@free=\dimen175
+\premulticols=\dimen176
+\postmulticols=\dimen177
+\multicolsep=\skip77
+\multicolbaselineskip=\skip78
+\partial@page=\box63
+\last@line=\box64
+\maxbalancingoverflow=\dimen178
+\mult@rightbox=\box65
+\mult@grightbox=\box66
+\mult@gfirstbox=\box67
+\mult@firstbox=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\c@minrows=\count287
+\c@columnbadness=\count288
+\c@finalcolumnbadness=\count289
+\last@try=\dimen179
+\multicolovershoot=\dimen180
+\multicolundershoot=\dimen181
+\mult@nat@firstbox=\box106
+\colbreak@box=\box107
+\mc@col@check@num=\count290
+) (sphinxhighlight.sty
+Package: sphinxhighlight 2016/05/29 stylesheet for highlighting with pygments
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
+sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+\sphinxverbatimsep=\dimen182
+\sphinxverbatimborder=\dimen183
+\sphinxshadowsep=\dimen184
+\sphinxshadowsize=\dimen185
+\sphinxshadowrule=\dimen186
+\spx@notice@border=\dimen187
+\spx@image@maxheight=\dimen188
+\spx@image@box=\box108
+\c@sphinxscope=\count291
+\c@sphinxexplicit=\count292
+\sphinxcontinuationbox=\box109
+\sphinxvisiblespacebox=\box110
+\sphinxVerbatim@TitleBox=\box111
+\sphinxVerbatim@ContentsBox=\box112
+\spx@scratchbox=\box113
+\py@argswidth=\skip79
+\lineblockindentation=\skip80
+\DUlineblockindent=\skip81
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count293
+\Gm@cntv=\count294
+\c@Gm@tempcnt=\count295
+\Gm@bindingoffset=\dimen189
+\Gm@wd@mp=\dimen190
+\Gm@odd@mp=\dimen191
+\Gm@even@mp=\dimen192
+\Gm@layoutwidth=\dimen193
+\Gm@layoutheight=\dimen194
+\Gm@layouthoffset=\dimen195
+\Gm@layoutvoffset=\dimen196
+\Gm@dimlist=\toks31
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
+o.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen197
+\Hy@linkcounter=\count296
+\Hy@pagecounter=\count297
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-lang
+patches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+y
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count298
+ (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count299
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen198
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count300
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring ON on input line 6093.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count301
+\c@Item=\count302
+\c@Hfootnote=\count303
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip82
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\hypcap.sty
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
+)
+(sphinxmessages.sty
+Package: sphinxmessages 2019/01/04 v2.0 Localized LaTeX macros (Sphinx team)
+)
+\@indexfile=\write4
+\openout4 = `calculia.idx'.
+
+
+Writing index file calculia.idx
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 85
+.
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count306
+\l__pdf_internal_box=\box114
+) (calculia.aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+)
+\openout1 = `calculia.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count307
+\scratchdimen=\dimen257
+\scratchbox=\box115
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen258
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks33
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@literalblock=\count313
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=36.135pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 85.
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count314
+)
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
+ (calculia.out) (calculia.out)
+\@outlinefile=\write5
+\openout5 = `calculia.out'.
+
+Package hyperref Info: Option `pageanchor' set `false' on input line 93.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 93
+.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 93.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 93.
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
+
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
+
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+
+{C:/Users/Miguel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
+
+
+]
+(calculia.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write6
+\openout6 = `calculia.toc'.
+
+ [1
+
+] [2
+
+]
+<calculinha.jpg, id=104, 289.83281pt x 376.40625pt>
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+9.
+
+(C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+File: calculinha.jpg Graphic file (type jpg)
+<use calculinha.jpg>
+Package pdftex.def Info: calculinha.jpg  used on input line 109.
+(pdftex.def)             Requested size: 263.48267pt x 342.20284pt.
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+
+[1 <./calculinha.jpg>]
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+ [2
+
+]
+Cap\'{\i }tulo 1.
+File: calculinha.jpg Graphic file (type jpg)
+<use calculinha.jpg>
+Package pdftex.def Info: calculinha.jpg  used on input line 117.
+(pdftex.def)             Requested size: 289.83209pt x 376.40532pt.
+[3]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 1
+.
+ (C:\Users\Miguel\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+LaTeX Info: Redefining \. on input line 242.
+LaTeX Info: Redefining \% on input line 242.
+
+[4]
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
+ [5]
+LaTeX Info: Redefining \. on input line 267.
+LaTeX Info: Redefining \% on input line 267.
+ [6
+
+]
+Cap\'{\i }tulo 2.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 293.
+[7]
+LaTeX Info: Redefining \. on input line 497.
+LaTeX Info: Redefining \% on input line 497.
+ [8]
+Overfull \hbox (48.14163pt too wide) in paragraph at lines 515--518
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 590.
+LaTeX Info: Redefining \% on input line 590.
+[9]
+LaTeX Info: Redefining \. on input line 590.
+LaTeX Info: Redefining \% on input line 590.
+ [10
+
+]
+Cap\'{\i }tulo 3.
+[11]
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
+ [12
+
+] [13
+
+
+] (calculia.ind
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [14
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+[]\T1/pcr/m/n/10 amosar_ventana() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de m
+o-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+[]\T1/pcr/m/n/10 closeEvent() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de cal-c
+u-la-do-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 21--23
+[]\T1/pcr/m/n/10 engade_icona_info_txt() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-
+do de mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+[]\T1/pcr/m/n/10 limpa_display() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de ca
+l-cu-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+[]\T1/pcr/m/n/10 manual_app() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de cal-c
+u-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+[]\T1/pcr/m/n/10 preme_num() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de cal-cu
+-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+[]\T1/pcr/m/n/10 preme_operacion() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de 
+cal-cu-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+[]\T1/pcr/m/n/10 preme_resultado() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de 
+cal-cu-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+[]\T1/pcr/m/n/10 primeiro_num \T1/ptm/m/n/10 (\T1/ptm/m/it/10 atri-bu-to de cal
+-cu-la-do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+[]\T1/pcr/m/n/10 retranslateUi() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de mo
+-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+\T1/ptm/m/it/10 los.calculinhaWindow.Ui_MainWindow\T1/ptm/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+[]\T1/pcr/m/n/10 retranslateUi() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de mo
+-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]\T1/pcr/m/n/10 sair() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de cal-cu-la-d
+o-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+[]\T1/pcr/m/n/10 setupUi() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+\T1/ptm/m/it/10 los.calculinhaWindow.Ui_MainWindow\T1/ptm/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+[]\T1/pcr/m/n/10 setupUi() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+[]\T1/pcr/m/n/10 showPdf() \T1/ptm/m/n/10 (\T1/ptm/m/it/10 mé-to-do de mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+[]\T1/pcr/m/n/10 staticMetaObject \T1/ptm/m/n/10 (\T1/ptm/m/it/10 atri-bu-to de
+ cal-cu-la-do-
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+[]\T1/pcr/m/n/10 staticMetaObject \T1/ptm/m/n/10 (\T1/ptm/m/it/10 atri-bu-to de
+ mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+[]\T1/pcr/m/n/10 staticMetaObject \T1/ptm/m/n/10 (\T1/ptm/m/it/10 atri-bu-to de
+ mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+[]\T1/pcr/m/n/10 staticMetaObject \T1/ptm/m/n/10 (\T1/ptm/m/it/10 atri-bu-to de
+ mo-du-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[]\T1/pcr/m/n/10 Ui_MainWindow \T1/ptm/m/n/10 (\T1/ptm/m/it/10 cla-se en mo-du-
+
+ []
+
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
+[16
+
+]) (calculia.aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+)
+Package rerunfilecheck Info: File `calculia.out' has not changed.
+(rerunfilecheck)             Checksum: 393B48745325287585F6A01F923ED929;2486.
+ ) 
+Here is how much of TeX's memory you used:
+ 13852 strings out of 479321
+ 204972 string characters out of 2856106
+ 543464 words of memory out of 3000000
+ 30905 multiletter control sequences out of 15000+600000
+ 452064 words of font info for 82 fonts, out of 8000000 for 9000
+ 1142 hyphenation exceptions out of 8191
+ 83i,11n,88p,355b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
+:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb
+><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.
+pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr
+o8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic
+/uhvb8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helv
+etic/uhvbo8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/helvetic/uhvr8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type1
+/urw/times/utmb8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/times/utmr8a.pfb><C:/Users/Miguel/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on calculia.pdf (20 pages, 256828 bytes).
+PDF statistics:
+ 310 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+
