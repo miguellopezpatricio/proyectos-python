@@ -6,10 +6,14 @@ https://youtu.be/8ext9G7xspg
 
 Proyectos realizados:
 
-''' /calculinha '''
+~~~
+/calculinha 
+~~~
 * Calculadora infantil 
 
-''' /juegos_python '''
+~~~
+/juegos_python
+~~~
 * guess_number: adivina un número
 * hangman: juego del ahorcado
 * madlibs
